@@ -1,5 +1,7 @@
 ﻿using Ambev.DeveloperEvaluation.Application.Products;
+using Ambev.DeveloperEvaluation.Application.Products.GetProducts;
 using Ambev.DeveloperEvaluation.WebApi.Common;
+using Ambev.DeveloperEvaluation.WebApi.Features.Products.GetProducts;
 using AutoMapper;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -8,6 +10,7 @@ namespace Ambev.DeveloperEvaluation.WebApi.Features.Products;
 
 /// <summary>
 /// Controller for managing product operations
+/// </summary>
 [ApiController]
 [Route("api/[controller]")]
 public class ProductsController(IMediator mediator, IMapper mapper) : BaseController

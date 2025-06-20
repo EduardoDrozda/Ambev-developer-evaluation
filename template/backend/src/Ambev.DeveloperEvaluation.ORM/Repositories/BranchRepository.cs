@@ -4,12 +4,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Ambev.DeveloperEvaluation.ORM.Repositories;
 
-public class ProductRepository(DefaultContext context) : IProductRepository
+public class BranchRepository(DefaultContext context): IBranchRepository
 {
-    public Task<List<Product>> GetAllAsync()
+    public async Task<List<Branch>> GetAllAsync()
     {
-        return context
-            .Products
+        return await context
+            .Branches
             .AsQueryable()
             .ToListAsync();
     }
