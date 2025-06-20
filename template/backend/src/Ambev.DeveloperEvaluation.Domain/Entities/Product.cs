@@ -22,9 +22,4 @@ public class Product: BaseEntity
     /// The unit price of the product.
     /// </summary>
     public decimal UnitPrice { get; set; }
-
-    /// <summary>
-    /// Whether the product is active for sale.
-    /// </summary>
-    public bool IsActive { get; set; } = true;
 }
